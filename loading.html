@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--JQUERY-->
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: blueviolet;
+    
+    }
+    #LoadingBar{
+        background-color:black;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 9999;
+        color: #fff;
+        transition: 1s linear;
+      
+    }
+
+</style>
+<script>
+     /*jQuery寫法*/
+    // $(document).ready(function(){
+    //     setTimeout(function(){
+    //         $("#LoadingBar").fadeOut(500);
+    //     }, 1000);
+    // });
+
+   
+    /*此法暫無使用淡入淡出,程式碼太冗長*/
+    window.onload =
+    setTimeout(function(){
+        document.querySelector('#LoadingBar').style.display='none'
+
+    },1000);
+        
+
+    
+
+
+</script>
+<body>
+    <div id="LoadingBar">正在載入，請稍候……</div> 
+    123
+</body>
+</html>
